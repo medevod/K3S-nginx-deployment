@@ -56,5 +56,3 @@ spec:
   selector:
     app: nginx
 ```
-
-[Go back to main page](README.md)
