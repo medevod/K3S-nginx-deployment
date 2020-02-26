@@ -4,7 +4,7 @@ metadata:
   name: nginx
 spec:
   rules:
-  - host: nginx.example.com
+  - host: nginx.k3s.local
     http:
       paths:
       - backend:
