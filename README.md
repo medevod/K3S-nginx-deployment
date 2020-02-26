@@ -1,5 +1,4 @@
-**This directory contains the 3 files described in the main [README.md](../README-first-draft.md) file**
-
+**Ce dépôt contient 3 fichiers pour déployer un service Nginx sous K3S/K8S**
 
 
 **[nginx-deployment.yml](nginx-deployment.yml)**
@@ -20,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.7.9
+        image: nginx:stable
         ports:
         - containerPort: 80
 ```
@@ -33,7 +32,7 @@ metadata:
   name: nginx
 spec:
   rules:
-  - host: nginx.example.com
+  - host: nginx.k3s.local
     http:
       paths:
       - backend:
